@@ -1,0 +1,184 @@
+@import "color-variables.scss";
+
+.intro{
+	
+	color:#fff;
+	background-color: $bg-color;
+	background-image: url(../images/IntroBgMob.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;
+  min-height: 626px;
+  
+}
+
+.intro-wrapper{
+	padding-top: 10px;
+	padding-left:15px;
+}
+.intro-tel{
+	position:absolute;
+	top:30px;
+  right:15px;
+  color:#fff;
+  text-decoration: none;
+  font-family: 'core_sans_e55_regular', Arial, sans-serif;
+  font-size:18px;
+}
+
+.intro-main-header{
+	font-family: 'core_sans_e45_regular', Arial, sans-serif;
+  font-size:16px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+ 
+  text-transform: lowercase;
+  letter-spacing: 0.7em;
+  background-image: url(../images/BgHeader.png);
+	background-repeat:no-repeat;
+	background-position: 0 100%;
+}
+
+.intro-header_mark{
+	font-family: 'Besom', Arial, sans-serif;
+  font-size:102px;
+  color:$main-color;
+  
+}
+.intro-header_no-mark{
+	font-family: 'core_sans_e95_regular', Arial, sans-serif;
+  font-size:38px;
+  text-transform: uppercase;
+	font-weight: 800;
+  transform: scaleX(0.84);
+  white-space: nowrap;
+  display:block;
+  margin-left: -20px;
+  margin-bottom:45px;
+}
+.intro__schedule{
+	height: 40px;
+	background-image: url(../images/IntroDays.png);
+	background-repeat:no-repeat;
+	display: inline-flex;
+	margin-left:5px;
+	margin-bottom: 50px;
+}
+.intro__schedule-wrapper{
+
+	min-width:188px;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:8px;
+}
+.intro__schedule-day{
+	font-family: 'core_sans_e95_regular', Arial, sans-serif;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight: 800;
+	color:rgba(0,0,0,1);
+
+}
+.intro__schedule-days{
+	font-family: 'CoreSansE-35LightIt', Arial, sans-serif;
+  font-size:14px;
+	margin-left:16px;
+	max-width:80px;
+
+}
+.risk-button{
+	background:none;
+	background-image: url(../images/Button.png);
+	background-repeat:no-repeat;
+	background-size:auto;
+	display: block;
+	width:300px;
+	height: 75px;
+	border:none;
+	font-family: 'core_sans_e95_regular', Arial, sans-serif;
+  font-size:18px;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom:20px;
+
+}
+	@media screen and (min-width: 750px) {
+		.intro{
+  background-image: url(../images/IntroBgTab.jpg);
+  min-height:602px;
+  text-align: center;
+}
+.intro-wrapper{
+	padding: 10px 15px;
+	
+}
+
+.intro__header-wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+.intro-logo{
+	width: 160px;
+}
+.intro-tel{
+	position:inherit;
+	margin-top:25px;
+}
+.intro-main-header{
+	margin-top:25px;
+}
+.intro-header_mark{
+  font-size:107px;
+}
+.intro-header_no-mark{
+	margin-left:0;
+	font-size:40px;
+	margin-bottom: 30px;
+}
+.intro__schedule-days{
+	margin-left: 30px;
+}
+.intro__risk{
+	margin:0 auto;
+	margin-bottom: 80px;
+}
+}
+
+	@media screen and (min-width: 1170px) {
+		.intro{
+  background-image: url(../images/IntroBgDesk.jpg);
+  min-height:1006px;
+  text-align: left;
+}
+.intro-wrapper{
+	width:1140px;
+	margin:0 auto;
+}
+
+.intro__schedule{
+	margin-left:15px;
+	margin-bottom: 70px;
+}
+.intro__header-wrapper{
+	margin-bottom: 130px;
+}
+.intro-header_mark{
+  font-size:180px;
+}
+.intro-header_no-mark{
+	margin-left:-30px;
+	font-size:68px;
+
+}
+
+.risk{
+	margin:0;
+} 
+
+}
+

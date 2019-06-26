@@ -1,0 +1,259 @@
+@import "color-variables.scss";
+
+.about{
+	margin-top:50px; 
+    box-sizing: border-box;
+	text-align: center;
+	color:$font-color;
+	
+
+}
+.about-header{
+	height: 70px;
+	line-height: 70px;
+	font-family: 'core_sans_e95_regular', Arial, sans-serif;
+    font-size:36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $main-color;
+    transform: scaleX(0.84);
+    z-index: 1;
+    white-space:nowrap;
+    margin-bottom:40px;
+
+    
+  &:after{
+
+     content:"Что вас ждёт";
+     font-family: 'Besom', Arial, sans-serif;
+     font-size: calc(5vw + 5vh + 2vmin);
+     color:$bg-color;
+     z-index: -1;
+     position: absolute;
+     white-space:nowrap;
+     margin:0 ;
+     transform: none;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+}
+  
+}	
+
+
+@mixin about-dot{
+	    content:"";
+    	display: block;
+    	width:10px;
+    	height: 10px;
+    	border-radius:50%;
+    	background-color: $main-color;
+    	border-width:5px;
+    	border-style:solid;
+    	border-color: rgba(255, 229, 229, 1);
+    	position: absolute;
+    	left:45px;
+    	
+
+}
+@mixin about-p{
+	width:100px;
+	margin:0 auto;
+	font-family: 'core_sans_e35_regular', Arial, sans-serif;
+    font-size:24px;
+    color: $main-color;
+    position: relative;
+
+    
+}
+.about-start{
+	@include about-p;
+	margin-bottom:75px;
+    &:after{
+    	@include about-dot;
+    	top:40px;
+    }
+
+}
+ .about-finish{
+ 	@include about-p;
+ 	&:before{
+ 		@include about-dot;
+ 		bottom:40px;
+ 	}
+ }
+.about__item{
+	list-style: none;
+	font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.about__item-header{
+	font-family: 'core_sans_e65_regular', Arial, sans-serif;
+    font-size:24px;
+    color: $header-color;
+    margin-bottom:20px;
+
+}
+
+.about__item-wrapper_r2{
+	margin-bottom: 50px;
+	
+}
+
+
+	@media screen and (min-width: 750px) {
+.about-wrapper{
+	width:730px;
+	padding:0 10px;
+	margin:0 auto;
+    background-image: url(../images/Line.png);
+	background-repeat:no-repeat;
+	background-position: 150px 0;
+	position: relative;
+
+
+}
+
+		.about{
+			margin-top:70px; 
+		}
+
+
+    .about-header{
+    	height: 90px;
+	line-height: 90px;
+    	font-size: 48px;
+    	margin-bottom:70px;
+    	&:after{
+    		font-size: 130px;
+
+    }
+
+	}
+	.about-start{
+		position: absolute;
+		right:65px;
+		top:35px;
+	}
+	.about__item{
+		font-size:14px;
+	}
+	.about__item-header{
+		
+		margin-left: 0;
+		font-size: 20px;
+	}
+
+	.about__item-img_l{
+		float: left;
+		margin-top: 60px;
+
+	}
+
+	.about__item-img_r{
+		float: right;
+	}
+	.about__item-text_l{
+      margin-bottom: 80px;
+	}
+	.about__item-text_r{
+      width: 270px;
+	}
+	.about__item-wrapper{
+	overflow: hidden;
+	width:290px;
+	text-align: left;
+	padding-left:15px;
+}
+	.about__item-wrapper_l1{
+		padding-top: 120px;
+		padding-left:35px;
+	}
+	.about__item-wrapper_l2{
+		padding-top: 60px;
+	}
+	.about__item-wrapper_r1{
+		margin-left:70px;
+		padding-top: 70px;
+	}
+	.about__item-wrapper_r2{
+		margin-left:400px;
+		margin-top: 230px;
+	}
+	.about-finish{
+		position: absolute;
+		left:210px;
+		bottom:240px;
+	}
+
+
+}
+
+	@media screen and (min-width: 1170px) {
+
+		.about{
+			margin-top:100px; 
+		}
+.about-header{
+    	font-size: 68px;
+    	 	&:after{
+    		font-size: 180px;
+
+    }
+    }
+    .about-wrapper{
+    	background-image: url(../images/LineBig.png);
+		width:1140px;
+		background-position: 200px 0;
+	  }
+	  .about-start{
+		right:220px;
+		top:40px;
+	}
+	.about__item-img_l{
+		margin-left: 80px;
+	}
+	.about__item-text_l{
+		margin-bottom:60px;
+
+	}
+	.about__item-img_r1{
+		float: left;
+		margin-left:100px;
+	}
+	.about__item-img_l2{
+		clear: left;
+		margin-top: 0;
+	}
+	.about__item-text_l2{
+		margin-bottom: 30px;
+	}
+	.about__item3{
+		width:800px
+	}
+	.about__item-wrapper_r2{
+		margin:0;
+		
+	}
+	.about__item-img_r2{
+		float:left;
+		margin-left: 90px;
+	}
+	.about__item-wrapper_r2{
+		width:280px;
+		padding-top:50px;
+	}
+	.about-finish{
+		left:260px;
+		bottom:40px;
+	}
+
+.about__item_last::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+}

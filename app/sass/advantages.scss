@@ -1,0 +1,128 @@
+
+@import "color-variables.scss";
+@mixin advantages-align{
+	display: block;
+	 margin:0 auto;
+	 
+}
+.advantages{
+
+    background-color: $bg-color;
+	background-image: url(../images/AdvantagesBg.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+    min-height: 100%;
+    color:rgba(255,255,255,1);
+    padding: 160px 15px;
+}
+.advantages__block{
+	@include advantages-align;
+    width:289px;
+	border: 4px solid $main-color;
+    border-image-source: url(../images/AdvantagesBorder.png);
+	border-image-repeat:round;
+	border-image-slice:3;
+	margin-bottom: 60px;
+}
+.advantages-header-wrapper{
+	background-image:url(../images/AdvantagesFoto.png);
+    background-repeat:no-repeat;
+   width: 289px;
+   height:277px;
+   margin-bottom: 20px;
+}
+.advantages-header{
+	font-family: 'core_sans_e95_regular', Arial, sans-serif;
+  font-size:36px;
+  text-transform: uppercase;
+  font-weight: 800;
+ 
+}
+.advantages-header-plus{
+	padding-top:70px;
+  padding-left:30px;
+  transform: scaleX(0.84);
+}
+
+.advantages-item{
+	font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+	list-style: none;
+	padding:0 20px ;
+	
+}
+.advantages-text{
+	margin-bottom: 45px;
+}
+.advantages__plus .advantages-item:last-child{
+	margin-bottom: 30px;
+}
+.advantages__minus-header,
+.advantages__plus-header{
+	&:before{
+		font-family: 'Besom', Arial, sans-serif;
+		font-size: 46px;
+		color:rgba(83,88,94,1);
+		padding-right:15px;
+	}
+	text-transform: uppercase;
+	font-family: 'core_sans_e65_regular', Arial, sans-serif;
+  font-size:20px;
+
+}
+.plus-header_1::before{
+  content: "01";
+}
+.plus-header_2::before{
+  content: "02";
+}
+.advantages__minus{
+	@include advantages-align;
+}
+.advantages-header-minus{
+ position: relative;
+ transform: scaleX(0.84);
+ min-width: 289px;
+ margin-bottom: 50px;
+}
+.advantages-header-minus::after{
+	content:"!";
+	font-family: 'Besom', Arial, sans-serif;
+		font-size: 75px;
+		font-weight: 400;
+transform: scaleX(1.2);
+	background-image: url(../images/AdvantagesSpot.png);
+	background-repeat:no-repeat;
+  background-repeat:no-repeat;
+   width: 110px;
+   height:110px;
+   background-size: cover;
+   display:inline-block;
+   position: absolute;
+   text-align: center; 
+   top:-20px;
+  left: 220px;
+  line-height: 1.8;
+}
+.advantages__minus-header{
+	margin-bottom: 20px;
+}
+
+
+
+
+@media screen and (min-width: 750px) {
+.advantages{
+	background-image: url(../images/AdvantagesBgTab.jpg);
+	min-height: 985px;
+	
+}
+}
+@media screen and (min-width: 1170px) {
+.advantages{
+	background-image: url(../images/AdvantagesBgDesk.jpg);
+	min-height: 929px;
+
+}
+}
