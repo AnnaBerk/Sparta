@@ -186,7 +186,7 @@
 	.about-finish{
 		position: absolute;
 		left:210px;
-		bottom:240px;
+		bottom:220px;
 	}
 
 
@@ -248,12 +248,13 @@
 	}
 	.about-finish{
 		left:260px;
-		bottom:40px;
+		bottom:85px;
 	}
 
 .about__item_last::after {
   content: "";
   display: block;
   clear: both;
+  margin-bottom: 100px;
 }
 }
