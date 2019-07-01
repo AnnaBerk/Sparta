@@ -60,15 +60,16 @@
 }
 .advantages__minus-header,
 .advantages__plus-header{
+	text-transform: uppercase;
+	font-family: 'core_sans_e65_regular', Arial, sans-serif;
+  font-size:20px;
 	&:before{
 		font-family: 'Besom', Arial, sans-serif;
 		font-size: 46px;
 		color:rgba(83,88,94,1);
 		padding-right:15px;
 	}
-	text-transform: uppercase;
-	font-family: 'core_sans_e65_regular', Arial, sans-serif;
-  font-size:20px;
+	
 
 }
 .plus-header_1::before{

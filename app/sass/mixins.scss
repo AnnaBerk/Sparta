@@ -1,0 +1,24 @@
+
+@mixin header-main-color{
+	
+	font-family: 'core_sans_e95_regular', Arial, sans-serif;
+    font-size:36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $main-color;
+    transform: scaleX(0.84);
+}
+@mixin header-background{
+ font-family: 'Besom', Arial, sans-serif;
+     font-size: calc(5vw + 5vh + 2vmin);
+     color:$bg-color;
+     z-index: -1;
+     position: absolute;
+     white-space:nowrap;
+     margin:0 ;
+     transform: none;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+ }

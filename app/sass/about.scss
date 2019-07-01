@@ -1,4 +1,5 @@
 @import "color-variables.scss";
+@import "mixins.scss";
 
 .about{
 	margin-top:50px; 
@@ -6,37 +7,21 @@
 	text-align: center;
 	color:$font-color;
 	
-
 }
+
 .about-header{
-	height: 70px;
-	line-height: 70px;
-	font-family: 'core_sans_e95_regular', Arial, sans-serif;
-    font-size:36px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: $main-color;
-    transform: scaleX(0.84);
+  @include header-main-color;
     z-index: 1;
     white-space:nowrap;
     margin-bottom:40px;
+    height: 70px;
+	line-height: 70px;
 
     
   &:after{
 
      content:"Что вас ждёт";
-     font-family: 'Besom', Arial, sans-serif;
-     font-size: calc(5vw + 5vh + 2vmin);
-     color:$bg-color;
-     z-index: -1;
-     position: absolute;
-     white-space:nowrap;
-     margin:0 ;
-     transform: none;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
+    @include header-background;
 }
   
 }	

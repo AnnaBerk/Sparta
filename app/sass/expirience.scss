@@ -1,0 +1,239 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+
+.expirience{
+	font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+   
+}
+.expirience__forest{
+	text-align: center;
+	margin-top: 50px;
+}
+.expirience-header{
+	@include header-main-color;
+	margin-bottom: 60px;
+
+	  &:after{
+
+     content:"Ты узнаешь";
+    @include header-background;
+}
+}
+.expirience__list-forest{
+	margin: 0 auto;
+	max-width: 400px;
+}
+.expirience__item-forest{
+	list-style: none;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	padding: 0 15px;	  
+}
+	
+
+.expirience__item-forest:nth-child(1){
+	&:before{
+     content:url("../images/01.png");
+ }
+}
+ .expirience__item-forest:nth-child(2){
+	&:before{
+     content:url(../images/02.png);
+ }
+}
+ .expirience__item-forest:nth-child(3){
+	&:before{
+     content:url(../images/03.png);
+ }
+}
+ .expirience__item-forest:nth-child(4){
+	&:before{
+     content:url(../images/04.png);
+ }
+
+}
+ .expirience__item-forest:nth-child(5){
+	&:before{
+     content:url(../images/05.png);
+ }
+
+}
+.expirience__item-header{
+	font-family: 'core_sans_e65_regular', Arial, sans-serif;
+    font-size:20px;
+    margin-bottom:20px; 
+     margin-top:30px; 
+}
+
+.expirience__city-header{
+	@include header-main-color;
+	margin-bottom: 60px;
+	font-size: 28px;
+	text-align: center;
+    
+}
+.expirience__list-city{
+	padding-left: 30px;
+    padding-right: 30px;
+	list-style: none;
+	max-width: 400px;
+	margin: 0 auto;
+	  
+	position: relative;
+	&:before{
+	content:"";
+    background-image:url("../images/NumerLineMob.png");
+    background-repeat:no-repeat;
+    counter-reset: li;
+	position: absolute;
+    height:467px; 
+    width: 50px;
+    left:15px;
+    top:-10px;
+    z-index: -1;
+     }
+}
+.expirience__item-city{
+    margin-left: 70px;
+	height: 106px;
+	
+	&:before{
+	font-family: 'core_sans_e65_regular', Arial, sans-serif;
+    counter-increment: li;
+    content: counter(li);
+    position: absolute;
+    left:35px;
+    color: rgba(255,255,255,1);
+}
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+.expirience-header{
+    font-size: 40px;
+    height: 70px;
+	line-height: 70px;
+}
+
+
+.expirience__list-forest{
+	display: flex;
+   justify-content: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+.expirience__item-forest{
+	width: 330px;
+	padding: 0 20px;
+	text-align: left;
+
+}
+
+.expirience__item-forest:last-child{
+padding-left: 140px;
+
+}
+.expirience__city-header{
+
+	margin-bottom: 140px;
+
+}
+
+}
+@media screen and (min-width: 1170px) {
+.expirience__list-forest{
+	
+	width:1000px;
+	margin: 0 auto; 
+	justify-content: space-between;
+}
+
+.expirience__item-forest{
+	position: relative;
+	margin-left: 100px;
+	width: 330px;
+	
+
+}
+.expirience__item-forest:before{
+     position:absolute;
+     left:-110px;
+     top:35px;
+ 
+}
+ .expirience__item-forest:nth-child(2){
+	
+    top:150px;
+ 
+}
+
+ .expirience__item-forest:nth-child(4){
+	top:150px;
+
+
+}
+.expirience__item-forest:last-child{
+padding-left: 20px;
+
+}
+
+.expirience__city-header{
+	max-width: 650px;
+	margin: 80px auto 130px;
+
+}
+.expirience__list-city{
+	display: flex;
+	
+	padding-left: 60px;
+    padding-right: 0px;
+	list-style: none;
+	max-width: 1150px;
+	&:before{
+   background-image:url("../images/NumerLine.png");
+   left: 50px;
+   height: 50px;
+   width: 1032px;
+   top:-70px;
+     
+     }
+}
+
+	.expirience__item-city{
+		
+    margin: 0px;
+	height:auto ;
+	text-align: left;
+	&:before{
+
+		left:0px;
+		top:-53px;
+		display: flex;
+		position: relative;
+		padding-left: 10px;
+	}
+}
+.expirience__item-city:nth-child(1){
+	
+	width: 165px;
+}
+.expirience__item-city:nth-child(2){
+	margin-left: 45px;
+	width: 200px;
+}
+.expirience__item-city:nth-child(3){
+	margin-left: 50px;
+	width: 170px;
+}
+.expirience__item-city:nth-child(4){
+	margin-left: 55px;
+	width: 210px;
+}
+.expirience__item-city:nth-child(5){
+	margin-left:85px;
+	width: 100px;
+}
+}
