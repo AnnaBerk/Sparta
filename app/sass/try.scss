@@ -1,0 +1,80 @@
+@import "color-variables.scss";
+
+.try{
+	box-sizing: border-box;
+    background-color: $bg-color;
+	background-image: url(../images/TryBgMob.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+    min-height: 510px;
+    text-align: center;
+    padding-top:180px;
+  
+}
+.try__header{
+  margin-bottom: 60px;
+}
+.try__header_no-mode{
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'core_sans_e95_regular', Arial, sans-serif;
+  font-size:27px;
+  font-weight: 800;
+  color: rgba(255,255,255,1);
+  white-space: nowrap;
+  transform: scaleX(0.84);
+}
+.try__header_mode{
+	
+  font-family: 'Besom', Arial, sans-serif;
+  font-size:80px;
+  color:$main-color;
+  
+}
+.risk-button{
+	margin: 0 auto;
+}
+@media screen and (min-width: 750px) {
+.try{
+	background-image: url(../images/TryBgTab.jpg);
+	min-height: 369px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+.try__header{
+   text-align: left;
+  margin-bottom: 0 ;
+
+}
+.try__header_mode{
+  font-size:90px;
+ 
+}
+.try__header_no-mode{
+  font-size:30px;
+  margin-left: -25px;
+}
+.risk-button{
+	margin: 0;
+	
+}
+}
+
+@media screen and (min-width: 1170px) {
+	.try{
+	background-image: url(../images/TryBgDesk.jpg);
+	
+}
+.try__header{
+ display: flex;
+justify-content: space-between;
+}
+.try__header_no-mode{
+ margin-left: 0; 
+ width: 330px;
+ white-space: normal;
+ 
+}
+}
