@@ -22,3 +22,17 @@
      left: 0;
      right: 0;
  }
+ @mixin dot{
+	    content:"";
+    	display: block;
+    	width:10px;
+    	height: 10px;
+    	border-radius:50%;
+    	background-color: $main-color;
+    	border-width:5px;
+    	border-style:solid;
+    	border-color: rgba(255, 229, 229, 1);
+    	position: absolute;
+    	
+
+}

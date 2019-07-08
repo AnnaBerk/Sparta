@@ -1,0 +1,155 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+.skills{
+	 background-image: url(../images/skillsLineMob.png);
+	background-repeat:no-repeat;
+	background-position: 0 100px;
+}
+.skills-header{
+
+	@include header-main-color;
+	text-align: center;
+    margin-bottom: 80px;
+    margin-top:80px;
+    height: 130px;
+
+	  &:after{
+
+     content:"Ты приобретешь";
+    @include header-background;
+     font-size: calc(5vw + 4vh + 2vmin);
+
+}
+}
+.skills-svg{
+	position: absolute;
+	font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:14px;
+    font-weight: 200;
+    left:-120px;
+
+   transform: rotate(55deg);
+}
+.skills__list{
+	font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    list-style: none;
+ 
+}
+
+.skills__list-item{
+	position: relative;
+	max-width: 250px;
+    &:before{
+    	@include dot;
+    	left: -40px;
+    }
+}
+.item-first{
+	margin-left: 85px;
+	width: 140px;
+	margin-bottom: 100px;
+}
+.item-second{
+	margin-left: 120px;
+	width: 145px;
+	margin-bottom: 75px;
+}
+.item-third{
+	margin-left: 125px;
+	width: 170px;
+	margin-bottom: 125px;
+}
+.item-fourth{
+	margin-left: 105px;
+	margin-bottom: 95px;
+}
+.item-fifth{
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+@media screen and (min-width: 750px) {
+	.skills{
+	 background-image:url(../images/skillsLineTab.png),url(../images/skillsBgTab.jpg);
+	background-position:110px 90px, 0 250px;
+	
+}
+.skills-header{
+	font-size: 48px;
+	margin-bottom: 20px;
+	&:after{
+		 font-size: calc(6vw + 6vh + 4vmin);
+		 top: -24px;
+	}
+}
+.skills__list-item{
+    &:before{
+    	left: -90px;
+    }
+}
+.item-first{
+	margin-left: 280px;
+	margin-bottom: 80px;
+}
+.item-second{
+	margin-left: 390px;
+	width: 230px;
+	margin-bottom: 75px;
+}
+.item-third{
+	margin-left: 455px;
+	width: 170px;
+	margin-bottom: 100px;
+}
+.item-fourth{
+	margin-left: 505px;
+	width: 230px;
+	margin-bottom: 90px;
+}
+.item-fifth{
+	margin-left: 530px;
+	padding-bottom: 80px;
+
+}
+}
+@media screen and (min-width: 1480px) {
+.skills{
+	 background-image:url(../images/skillsLineDesk.png),url(../images/skillsBgDesk.jpg);
+	background-position:810px 130px, 0 70px;
+	
+}
+.skills-header{
+	font-size: 68px;
+	margin-bottom: 50px;
+	&:after{
+		 font-size: calc(6vw + 6vh + 4vmin);
+		 top: -44px;
+	}
+}
+.item-first{
+	margin-left: 965px;
+	margin-bottom: 80px;
+}
+.item-second{
+	margin-left: 1080px;
+	width: 230px;
+	margin-bottom: 95px;
+}
+.item-third{
+	margin-left: 1160px;
+	width: 170px;
+	margin-bottom: 110px;
+}
+.item-fourth{
+	margin-left: 1210px;
+	width: 230px;
+	margin-bottom: 100px;
+}
+.item-fifth{
+	margin-left: 1230px;
+	padding-bottom: 180px;
+
+}
+}
