@@ -60,9 +60,12 @@
     .programm{
     background-image:url("../images/ProgrammBgTab.jpg");  
     min-height: 765px;
+    background-position-y:170px; 
+  
 }
 .programm-header{
     font-size: 48px;
+    margin-bottom: 140px;
  
     &:after{
         font-size: 130px;
@@ -71,17 +74,26 @@
 }
 .programm__list{
     width: 100%;
+    max-width: 830px;
     column-count: 2;
+    
 }
 .programm__list-item{
     max-width: 305px;
 }
+.programm__wrapper{
+    margin: 0 auto;
+    max-width: 830px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
 .programm-text{
-    display: inline-block;
+    margin-left: 15px;
+    font-size: 60px;
+    margin-top: 0;  
 }
-.programm-button{
-    display: inline-block;
-}
+
 }
 
 
@@ -89,7 +101,11 @@
     .programm{
     background-image:url("../images/ProgrammBgDesk.jpg");  
     min-height: 634px;
-    
+    background-size: auto;
+    background-position-x: center;
+}
+.programm__list{
+    width: 830px;
 }
 .programm-header{
     font-size: 68px;
@@ -98,5 +114,9 @@
         font-size: 180px;
 
 }
+}
+.programm-text{
+    font-size: 87px;
+    
 }
 }
