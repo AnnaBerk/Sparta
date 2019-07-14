@@ -1,14 +1,15 @@
 @import "color-variables.scss";
 
 .try{
-	box-sizing: border-box;
-    background-color: $bg-color;
+  width: 100%;
+  overflow: hidden;
+  background-color: $bg-color;
 	background-image: url(../images/TryBgMob.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
-    min-height: 510px;
-    text-align: center;
-    padding-top:180px;
+  min-height: 510px;
+  text-align: center;
+  padding-top:180px;
   
 }
 .try__header{
@@ -31,7 +32,7 @@
   color:$main-color;
   
 }
-.risk-button{
+.try-button{
 	margin: 0 auto;
 }
 @media screen and (min-width: 750px) {
@@ -56,7 +57,7 @@
   font-size:30px;
   margin-left: -25px;
 }
-.risk-button{
+.try-button{
 	margin: 0;
 	
 }

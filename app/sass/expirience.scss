@@ -114,8 +114,12 @@
 
 .expirience-header{
     font-size: 40px;
-    height: 70px;
-	line-height: 70px;
+    height: 80px;
+	line-height: 80px;
+	&:after{
+		font-size: 130px;
+
+}
 }
 
 
@@ -147,6 +151,15 @@ padding-left: 140px;
  .expirience__city{
  	margin-bottom: 130px;
  }
+ .expirience-header{
+    font-size: 68px;
+    height: 80px;
+	line-height: 80px;
+	&:after{
+		font-size: 180px;
+
+}
+}
 .expirience__list-forest{
 	
 	width:1000px;

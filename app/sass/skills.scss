@@ -4,6 +4,7 @@
 	 background-image: url(../images/skillsLineMob.png);
 	background-repeat:no-repeat;
 	background-position: 0 100px;
+	box-sizing: border-box;
 }
 .skills-header{
 
@@ -11,7 +12,8 @@
 	text-align: center;
     margin-bottom: 80px;
     margin-top:80px;
-    height: 130px;
+	height: 70px;
+	line-height: 70px;
 
 	  &:after{
 
@@ -21,16 +23,20 @@
 
 }
 }
+.svg-text{
+	position: relative;
+}
 .skills-svg{
 	position: absolute;
 	font-family: 'core_sans_e45_regular', Arial, sans-serif;
     font-size:14px;
     font-weight: 200;
-    left:-120px;
-
-   transform: rotate(55deg);
+    left:-180px;
+    top: 100px;
+   transform: rotate(60deg);
 }
 .skills__list{
+	
 	font-family: 'core_sans_e45_regular', Arial, sans-serif;
     font-size:16px;
     font-weight: 500;
@@ -78,11 +84,18 @@
 }
 .skills-header{
 	font-size: 48px;
-	margin-bottom: 20px;
-	&:after{
-		 font-size: calc(6vw + 6vh + 4vmin);
-		 top: -24px;
+	margin-bottom: 70px;
+	
+		&:after{
+			font-size: 130px;
+
 	}
+}
+.skills-svg{
+
+    left:50px;
+    top: 90px;
+   transform: rotate(35deg);
 }
 .skills__list-item{
     &:before{
@@ -122,11 +135,17 @@
 }
 .skills-header{
 	font-size: 68px;
-	margin-bottom: 50px;
-	&:after{
-		 font-size: calc(6vw + 6vh + 4vmin);
-		 top: -44px;
+	
+		&:after{
+			font-size: 180px;
+	
 	}
+}
+.skills-svg{
+
+    left:730px;
+    top: 90px;
+   transform: rotate(35deg);
 }
 .item-first{
 	margin-left: 965px;

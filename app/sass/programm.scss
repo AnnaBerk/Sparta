@@ -1,0 +1,102 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+
+.programm{
+    background-image:url("../images/ProgrammBgMob.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 939px;
+    font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.programm-header{
+    @include header-main-color;
+    text-align: center;
+    margin-bottom: 50px;
+    height: 70px;
+	line-height: 70px;
+    &:after{
+
+        content:"программа";
+       @include header-background;
+}
+}
+.programm__list{
+    margin: 0 auto;
+    width: 290px;
+    counter-reset: item ;
+}
+.programm__list-item{
+    left: 55px;
+    list-style: none;
+    position: relative;
+    max-width: 250px;
+    margin-bottom: 30px;
+	&:before{
+    font-family: 'Besom', Arial, sans-serif;
+    font-size: 30px;
+    counter-increment: item;
+    content: "0"counter(item);
+    color: $main-color;
+    margin-right: 15px;
+    position: absolute;
+    left: -40px;
+}
+}
+.programm-text{
+    text-align: center;
+    color: $main-color;
+    font-family: 'Besom', Arial, sans-serif;
+    font-size: 54px;
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+.programm-button{
+    margin:0 auto;
+}
+@media screen and (min-width: 750px) {
+    .programm{
+    background-image:url("../images/ProgrammBgTab.jpg");  
+    min-height: 765px;
+}
+.programm-header{
+    font-size: 48px;
+ 
+    &:after{
+        font-size: 130px;
+
+}
+}
+.programm__list{
+    width: 100%;
+    column-count: 2;
+}
+.programm__list-item{
+    max-width: 305px;
+}
+.programm-text{
+    display: inline-block;
+}
+.programm-button{
+    display: inline-block;
+}
+}
+
+
+@media screen and (min-width: 1170px) {
+    .programm{
+    background-image:url("../images/ProgrammBgDesk.jpg");  
+    min-height: 634px;
+    
+}
+.programm-header{
+    font-size: 68px;
+    
+    &:after{
+        font-size: 180px;
+
+}
+}
+}
