@@ -1,0 +1,160 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+.instructor{
+    text-align: center;
+    font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+   
+}
+.instructor-header{
+    @include header-main-color;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:after{
+
+        content:"инструктор";
+       @include header-background;
+}
+}
+.instructor-foto{
+    margin-bottom: 20px;
+}
+.instructor-name{
+    font-family: 'core_sans_e65_regular', Arial, sans-serif;
+    font-size:24px;
+    color: $main-color;
+    margin-bottom: 40px;
+}
+.instructor__about{
+    text-align: left;
+    list-style: none;
+    max-width: 450px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.instructor__about_first{
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    min-height: 273px;
+
+    &:before{    
+content: "";
+  background: url('../images/InstructorBg1.png') ;
+  width: 55px;
+  height: 300px;
+  background-repeat:no-repeat;
+  background-size: cover;
+ position: absolute;
+ left: -60px;
+}
+}
+.instructor__about_second{
+    position: relative;
+    margin-left: 60px;
+    min-height: 250px;
+    margin-bottom: 45px;
+    
+    &:before{    
+content: "";
+  background: url('../images/InstructorBg2.png') ;
+  width: 55px;
+  height: 290px;
+  background-repeat:no-repeat;
+  background-size: cover;
+ position: absolute;
+ left: -60px;
+}
+}
+.instructor__about-item{
+    margin-bottom: 30px;
+}
+.instructor__experience{
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+}
+.item-text{
+  display: inline-block;
+  width: 160px;
+  vertical-align: top;
+  padding-top: 20px;
+}
+.item-number{
+    font-family: 'Besom', Arial, sans-serif;
+    font-size: 100px;
+    color: $main-color;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 40px;
+    
+}
+@media screen and (min-width: 750px) {
+    .instructor-header{
+        font-size: 48px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        &:after{
+            font-size: 130px;
+    
+    }
+    }
+
+    .instructor-name{
+        margin-bottom: 50px;
+    } 
+
+.instructor__about-wrapper{
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.instructor__about_first{
+    width: 60%;
+}
+.instructor__about_second{
+    width: 40%;
+}
+.instructor__experience{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 950px;
+}
+.instructor__experience-item{
+    min-width: 350px;
+}
+.item-number{
+    font-size: 120px;
+}
+.item-text{
+    padding-top: 50px;
+  }
+  .number1{
+    order:1;
+}
+  .number2{
+      order:3;
+  }
+  .number3{
+    order:2;
+}
+.number4{
+    order:4;
+}
+}
+@media screen and (min-width: 1170px) {
+    .instructor-header{
+        font-size: 68px;
+        margin-top: 140px;
+        margin-bottom: 80px;
+        &:after{
+            font-size: 180px;
+    
+    }
+    }
+  
+}
