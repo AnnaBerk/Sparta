@@ -1,0 +1,74 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+.testimonials{
+    text-align: center;
+    font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+   padding: 0 15px;
+}
+.testimonials-header{
+    @include header-main-color;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:after{
+
+        content:"отзывы";
+       @include header-background;
+}
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+.testimonials__video{
+   width: 100%;
+   height: auto; 
+   margin: 0 auto;
+   position: relative;}
+   #playBtn{
+    content:("");
+	background-image: url(../images/VideoPlay.png);
+	background-repeat:no-repeat;
+	 background-size: cover;
+   position: absolute;
+   width: 77px;
+   height: 86px;
+   left:calc(50% - 43px);
+   top:calc(50% - 38px);
+   
+}
+.testimonials-movie {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+@media screen and (min-width: 750px) {
+    .testimonials-header{
+        font-size: 48px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        &:after{
+            font-size: 130px;
+    
+    }
+    }
+}
+@media screen and (min-width: 1170px) {
+    .testimonials-header{
+        font-size: 68px;
+        margin-top: 140px;
+        margin-bottom: 80px;
+        &:after{
+            font-size: 180px;
+    
+    }
+    }
+
+}
