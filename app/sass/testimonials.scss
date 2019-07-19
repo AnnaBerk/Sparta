@@ -32,16 +32,27 @@
    margin: 0 auto;
    position: relative;}
    #playBtn{
-    content:("");
+
 	background-image: url(../images/VideoPlay.png);
 	background-repeat:no-repeat;
-	 background-size: cover;
+	background-size: cover;
    position: absolute;
    width: 77px;
    height: 86px;
-   left:calc(50% - 43px);
-   top:calc(50% - 38px);
-   
+   left:calc(50% - 40px);
+   top:calc(50% - 40px);
+   &:after{
+       content:"";
+       position: relative;
+       display: inline-block;
+       border-left:15px solid #fff;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    width:0;
+    height:0;
+    left:7px;
+   top:calc(50% - 7px)
+   }
 }
 .testimonials-movie {
     width: 100%;
@@ -50,6 +61,11 @@
   }
 
 @media screen and (min-width: 750px) {
+    .testimonials{
+     background-image: url(../images/VideoBgTab.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+    }
     .testimonials-header{
         font-size: 48px;
         margin-top: 70px;
@@ -61,6 +77,11 @@
     }
 }
 @media screen and (min-width: 1170px) {
+    .testimonials{
+        background-image: url(../images/VideoBgDesk.jpg);
+       background-repeat:no-repeat;
+       background-size: cover;
+       }
     .testimonials-header{
         font-size: 68px;
         margin-top: 140px;
@@ -70,5 +91,7 @@
     
     }
     }
-
+    .testimonials__video{
+        max-width: 1140px;
+    }
 }
