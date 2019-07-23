@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -109,7 +109,7 @@
 	</div>
 	<div class="advantages__minus">
 		<h2 class="advantages-header advantages-header-minus">Чего <br>не будет</h2>
-		<div >	
+			
 		<ul class="advantages__minus-wrapper">
 			<li class="advantages-item">
 				<h3 class="advantages__minus-header minus-header_1">Нет скуке!</h3>
@@ -219,43 +219,86 @@
 	<picture >
 		<source media="(max-width: 320px)" srcset="images/ProgrammFotoMob.jpg">
 		<source media="(max-width: 750px)" srcset="images/ProgrammFotoTab.jpg">
-		<img class="programm-foto" src="images//ProgrammFotoDesk.jpg" alt="Фотографии людей в походе">
+		<img class="programm-foto" src="images/ProgrammFotoDesk.jpg" alt="Фотографии людей в походе">
 	  </picture>
 </section>
 <section class="instructor">
-	<h2 class="instructor__header">Инструктор</h2>
-	<figure>
-    <img src="" alt="Фото инструктора  в солнечных очках, футболке и шапке болотного цвета на фоне горных вершин">
-    <figcaption>Роман Попков</figcaption>
-</figure>
-<ul class="instructor__about">
-	<li class="instructor__about__item">Альпинист</li>
-	<li class="instructor__about__item">8 восхождений на Эльбрус (Западная и Восточная вершины), восхождение на Монблан. Неоднократно принимал участие в спасательных работах в горах. Спас двоих человек на вершине Эльбруса в снежную бурю</li>
-	<li class="instructor__about__item">Обучался у военных,горных и нструкторов по туризму</li>
-	<li class="instructor__about__item">Обучался в центре подготовки спасателей</li>
-	<li class="instructor__about__item">Инструктор по первой помощи по программе Красноого Креста</li>
-	<li class="instructor__about__item">Обучение и подготовка в Центре медицины катастроф</li>
-	<li class="instructor__about__item">Дайвер</li>
+	
+	<h2 class="instructor-header">Инструктор</h2>
+	<div class="instructor-wrapper">
+    <img class="instructor-foto" src="images/Instructor.jpg" alt="Фото инструктора  в солнечных очках, футболке и шапке болотного цвета на фоне горных вершин">
+    <h3 class="instructor-name">Роман Попков</h3>
+<div class="instructor__about-wrapper">
+<ul class="instructor__about instructor__about_first ">
+	<li class="instructor__about-item">Альпинист</li>
+	<li class="instructor__about-item">8 восхождений на Эльбрус (Западная и Восточная вершины), восхождение на Монблан. Неоднократно принимал участие в спасательных работах в горах. Спас двоих человек на вершине Эльбруса в снежную бурю</li>
+	<li class="instructor__about-item">Обучался у военных,горных и нструкторов по туризму</li>
+
+</ul>	
+<ul class="instructor__about instructor__about_second">
+	<li class="instructor__about-item">Обучался в центре подготовки спасателей</li>
+	<li class="instructor__about-item">Инструктор по первой помощи по программе Красноого Креста</li>
+	<li class="instructor__about-item">Обучение и подготовка в Центре медицины катастроф</li>
+	<li class="instructor__about-item">Дайвер</li>
 </ul>
+</div>
+</div>
 <ul class="instructor__experience">
-	<li class="instructor__experience__item"><span class="item-number">27</span>спарт провел в качестве капитана</li>
-	<li class="instructor__experience__item"><span class="item-number">28</span>прыжков с веревкой (rope jumping)</li>
-	<li class="instructor__experience__item"><span class="item-number">05</span>спарт организовал (максимальный поток 28 чел.)</li>
-	<li class="instructor__experience__item"><span class="item-number">35</span>боёв в Бойцовском клубе</li>
+	<li class="instructor__experience-item number1"><span class="item-number ">27</span><span class="item-text">Спарт провел в качестве капитана</span></li>
+	<li class="instructor__experience-item number2"><span class="item-number ">28</span><span class="item-text">Прыжков с веревкой (rope jumping)</span></li>
+	<li class="instructor__experience-item number3"><span class="item-number">05</span><span class="item-text">Спарт организовал (максимальный поток 68 чел.)</span></li>
+	<li class="instructor__experience-item number4"><span class="item-number">35</span><span class="item-text">Боёв в Бойцовском клубе</span></li>
 </ul>
 </section>
 
 <section class="try">
-	<h2 class="try__header"><span class="try__header-mode">Испытай</span>себя на прочность</h2>
-	<button class="risk">рискнуть</button><
-</section>
+
+		<h2  class="try__header"><span class="try__header_mode">Испытай <br></span> <span  class="try__header_no-mode">себя на прочность</span></h2>
+		<button class="risk-button try-button">рискнуть</button>
+	</section>
+
 <section class="testimonials">
-	<div class="testimonials__video"></div>
+	<h2 class="testimonials-header">Отзывы</h2>
+	<div class="testimonials__video">
+			<video  class="testimonials-movie" controls="controls" poster="images/VideoMock.jpg">
+				<source src="video/videosee21.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				  <source src="video/videosee1.webm" type='video/webm; codecs="vp8, vorbis"'>
+						  Тег video не поддерживается вашим браузером. 
+			  </video>
+			  <a id="playBtn"><span class="visually-hidden">Проиграть видео</span></a>
+	</div>
+	<script>
+		var playBtn = document.getElementById('playBtn');
+		
+		var videoEl = document.getElementsByTagName('video')[0];
+		playBtn.addEventListener('click', function () {
+    if (videoEl.paused) { 
+        videoEl.play();
+		playBtn.classList.add("visually-hidden");
+    } else {
+        videoEl.pause();
+		
+    }
+}, false);
+   
+	</script>
 	<div class="testimonials__item">
-		<figure class="item__foto"></figure>
+			<picture >
+					<source media="(max-width: 320px)" srcset="images/TestimonialsFotoMob.jpg">
+					<source media="(max-width: 750px)" srcset="images/TestimonialsFotoTab.jpg">
+					<img class="testimonials-foto" src="images/TestimonialsFoto.jpg" alt="Молодой человек в солнечных очках.">
+				  </picture>
 		<h3 class="item__header">Дмитрий Весна</h3>
-		<p class="item__text">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать самостоятельные спуски и подъемы с крутых скал за 1 день, делать носилки за 5 минут из подручных средств, есть ягоды по пол дня, потому что другой еды нет, пить только из речки, ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать под открытым небом без спальников... и палаток, и </p>
+		<p class="item__text ">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже,
+			 что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день
+			  плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому 
+			  что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать 
+			  самостоятельные спуски и подъемы с крутых скал за 1 день, делать носилки за 5 минут из 
+			  подручных средств, есть ягоды по пол дня, потому что другой еды нет, пить только из речки,
+			   ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать 
+			   под открытым небом без спальников... и палаток, и </p>
+			   <button class="item-read">читать далее</button>
 	</div>
 </section>
-
+<script src="js/common.js"></script>
 </body>
