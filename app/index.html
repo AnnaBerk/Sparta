@@ -283,13 +283,15 @@
    
 	</script>
 	<div class="testimonials__item">
+		<div class="testimonials__item-wrapper">
 			<picture >
 					<source media="(max-width: 320px)" srcset="images/TestimonialsFotoMob.jpg">
-					<source media="(max-width: 750px)" srcset="images/TestimonialsFotoTab.jpg">
+					<source media="(max-width: 749px)" srcset="images/TestimonialsFotoTab.jpg">
 					<img class="testimonials-foto" src="images/TestimonialsFoto.jpg" alt="Молодой человек в солнечных очках.">
 				  </picture>
-		<h3 class="item__header">Дмитрий Весна</h3>
-		<p class="item__text ">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже,
+				  <div class="testimonials-wrapper">
+		<h3 class="testimonials__item-header">Дмитрий Весна</h3>
+		<p class="testimonials__item-text ">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже,
 			 что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день
 			  плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому 
 			  что надо совершать марш броски с пострадавшим в 140 кг. ,освоить альпинизм и совершать 
@@ -297,8 +299,20 @@
 			  подручных средств, есть ягоды по пол дня, потому что другой еды нет, пить только из речки,
 			   ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать 
 			   под открытым небом без спальников... и палаток, и </p>
-			   <button class="item-read">читать далее</button>
-	</div>
+			   <button class="testimonials__item-read">Читать весь отзыв<span class="arrow"></span></button>
+	
+
+	<ul class="testimonials__pagination">
+		<li class="pagination-item "><a class="pagination_before" href="#0"><span class="visually-hidden">предыдущий комментарий</span></a></li>
+		<li class="pagination-item pag1"><a class="pagination_dot1" href="#0"></a></li>
+		<li class="pagination-item pag2"><a class="pagination_dot2"href="#0"></a></li>
+		<li class="pagination-item pag3"><a class="pagination_dot3"href="#0"></a></li>
+		<li class="pagination-item pag4"><a class="pagination_dot4"href="#0"></a></li>
+		<li class="pagination-item"><a class="pagination_next"href="#0"><span class="visually-hidden">следущий комментарий</span></a></li>
+	</ul>
+</div>
+</div>
+</div>
 </section>
 <script src="js/common.js"></script>
 </body>
