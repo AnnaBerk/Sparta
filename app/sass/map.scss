@@ -1,0 +1,35 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+
+
+.map{
+    background-image: url(../images/MapMob.png);
+	background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 489px;
+    text-align: center;
+    background-position-y:30px ;
+}
+.map-header{
+    @include header-main-color;
+  
+    &:after{
+
+        content:"мы здесь были";
+        
+       @include header-background;
+}
+}
+@media screen and (min-width: 750px) {
+    .map{
+        background-image: url(../images/MapTab.png);
+        min-height: 708px;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .map{
+        background-image: url(../images/MapDesk.png);
+        min-height: 714px;
+    }
+}
