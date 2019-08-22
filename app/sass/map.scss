@@ -1,35 +1,157 @@
 @import "color-variables.scss";
 @import "mixins.scss";
 
-
 .map{
-    background-image: url(../images/MapMob.png);
-	background-repeat:no-repeat;
-    background-size: cover;
-    min-height: 489px;
     text-align: center;
-    background-position-y:30px ;
+    overflow: hidden;
+}
+.map-foto{
+    width: 100%;
+    height: auto;
+}
+.map-wrapper{
+    position: relative;
 }
 .map-header{
     @include header-main-color;
-  
+
     &:after{
 
         content:"мы здесь были";
-        
        @include header-background;
 }
 }
+.map-city{
+    list-style: none;
+    position: absolute;
+     
+    
+}
+.city-first{
+    left: 18.75%;
+    top:38.8%;
+    &:before{
+        @include dot;      
+    }
+    
+}
+.city-second{
+    left: 53.12%;
+    top:31%;
+    &:before{
+        @include dot;      
+    }
+	
+}
+.city-third{
+    left: 19.75%;
+    top:68.8%;
+    &:before{
+        @include dot;      
+    }
+
+}
+.city-fourth{
+    left: 78.75%;
+    top:67.8%;
+    &:before{
+        @include dot;      
+    }
+	
+}
+
 @media screen and (min-width: 750px) {
-    .map{
-        background-image: url(../images/MapTab.png);
-        min-height: 708px;
+    .map-header{
+        height: 70px;
+        line-height: 70px;
+        
+        margin-bottom: 10px;
+        margin-top: 20px;
+        @include header-main-color;
+        font-size: 48px;
+        &:after{
+    
+            content:"мы здесь были";
+           @include header-background;
+    }
+    }
+
+    .city-first{
+        left: 18.75%;
+        top:38.8%;
+        &:before{
+            @include dot;      
+        }
+        
+    }
+    .city-second{
+        left: 53.12%;
+        top:31%;
+        &:before{
+            @include dot;      
+        }
+        
+    }
+    .city-third{
+        left: 19.75%;
+        top:68.8%;
+        &:before{
+            @include dot;      
+        }
+    
+    }
+    .city-fourth{
+        left: 78.75%;
+        top:67.8%;
+        &:before{
+            @include dot;      
+        }
+        
+    }
+    .city-fifth{
+        left: 23.75%;
+        top:84.8%;
+        &:before{
+            @include dot;      
+        }
+        
+    }
+    .city-six{
+        left: 78.75%;
+        top:25.8%;
+        &:before{
+            @include dot;      
+        }
+        
     }
 }
 
 @media screen and (min-width: 1170px) {
     .map{
-        background-image: url(../images/MapDesk.png);
-        min-height: 714px;
+        
+    }
+    .city-fifth{
+        left: 23.75%;
+        top:80.8%;
+        &:before{
+            @include dot;      
+        }
+        
+    }
+    .city-fourth{
+        left: 48.75%;
+        top:67.8%;
+        &:before{
+            @include dot;      
+        }
+        
+    }
+    .city-seven{
+        left: 18.75%;
+        top:77.8%;
+        &:before{
+            @include dot;      
+        }
+        
     }
 }

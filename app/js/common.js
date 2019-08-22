@@ -8,7 +8,6 @@ showBtn.addEventListener("click", function(evt){
   showBtn.style.display = "none"; 
   item.style.height = item.scrollHeight+"px";
   let computedStyle = getComputedStyle(document.testimonial);
-  alert(computedStyle);
   let testimonialBgHeight = computedStyle+parseInt(item.scrollHeight);
   testimonial.style.height = testimonialBgHeight +"px";
  });
