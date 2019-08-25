@@ -306,10 +306,10 @@
 	<ul class="testimonials__pagination">
 		<li class="pagination-item "><a class="pagination_before" href="#0"><span class="visually-hidden">предыдущий комментарий</span></a></li>
 		<li class="pagination-item pag1"><a class="pagination_dot1" href="#0"></a></li>
-		<li class="pagination-item pag2"><a class="pagination_dot2"href="#0"></a></li>
-		<li class="pagination-item pag3"><a class="pagination_dot3"href="#0"></a></li>
-		<li class="pagination-item pag4"><a class="pagination_dot4"href="#0"></a></li>
-		<li class="pagination-item"><a class="pagination_next"href="#0"><span class="visually-hidden">следущий комментарий</span></a></li>
+		<li class="pagination-item pag2"><a class="pagination_dot2" href="#0"></a></li>
+		<li class="pagination-item pag3"><a class="pagination_dot3" href="#0"></a></li>
+		<li class="pagination-item pag4"><a class="pagination_dot4" href="#0"></a></li>
+		<li class="pagination-item"><a class="pagination_next" href="#0"><span class="visually-hidden">следущий комментарий</span></a></li>
 	</ul>
 </div>
 </div>
@@ -318,12 +318,13 @@
 <section class="map">
 	<h2 class="map-header">георгафия проведения</h2>
 	<div class="map-wrapper">
-	<ul>
+	
 			<picture >
-					<source media="(max-width: 749px)" srcset="images/MapMob.png">
-					<source media="(max-width: 1169px)" srcset="images/MapTab.png">
-					<img class="map-foto" src="images/MapDesk.png" alt="Карта проведения мероприятий.">
+					<source media="(min-width: 1169px)" srcset="images/MapDesk.png">
+					<source media="(min-width: 750px)" srcset="images/MapTab.png">
+					<img class="map-foto" src="images/MapMob.png" alt="Карта проведения мероприятий.">
 				  </picture>
+				  <ul>
 		<li class="map-city city-first"><span class="visually-hidden">First</span></li>
 		<li class="map-city city-second"><span class="visually-hidden">Second</span></li>
 		<li class="map-city city-third"><span class="visually-hidden">Third</span></li>
@@ -339,17 +340,18 @@
 	<h2 class="questions-header">Есть вопросы?</h2>
 	<p class="questions-paragraf">Оставьте свой номер телефона, наши менеджеры свяжутся и проконсультируют Вас.</p>
 		<form class="question-form" method="post" action="#">
-      
-				<label for="user-name">Имя</label><br>
-				<input id="user-name" type="text" name="name" maxlength=20 required autofocus>
+      <div class="question-wrapper">
+				<label class="visually-hidden" for="user-name">Имя</label>
+				<input id="user-name" class="question-input" type="text" name="name" placeholder="Имя" maxlength=20 required autofocus><br>
 				
 				
-				<label for="user-tel">E-mail</label><br>
-				<input type="tel" name="user-tel"  pattern="">
+				<label class="visually-hidden" for="user-tel" >Телефон</label>
+				<input  id="user-tel" class="question-input" type="tel" name="tel" placeholder="Телефон" pattern=""><br>
 				
-				
-				<button type="submit">Отправить</button> 
-
+			</div>	
+				<button class="risk-button question-button" type="submit">Отправить</button> 
+			
+			</form> 
 </section>
 <script src="js/common.js"></script>
 </body>

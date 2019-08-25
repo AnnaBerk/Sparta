@@ -1,0 +1,83 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+
+    .questions{
+          
+     background-image: url(../images/FormMob.jpg);
+	background-repeat:no-repeat;
+    background-size:  cover;
+    text-align: center;
+    color: $bg-color;
+    font-family: 'core_sans_e45_regular', Arial, sans-serif;
+    font-size: 16px;
+    min-height: 650px;
+    
+    }
+    .questions-header{
+        font-family: "Besom";
+        font-size: 48px;
+        font-weight: 300;
+        padding-top: 80px;
+       
+    }
+    .questions-paragraf{
+        text-align: left;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        padding: 0 15px;
+        line-height: 1.5;
+        max-width: 405px;
+        margin: 40px auto;
+    }
+.question-wrapper{
+   width: 90.63%;
+   max-width: 405px;
+   margin: 0 auto;
+}
+.question-form{
+    
+}
+    .question-input{
+
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding:20px 20px;
+  margin-bottom: 30px;
+  border-width: 0;
+  border-radius: 30px;
+  color: white;
+  background: rgba(255,255,255,.1);
+  font-family: 'core_sans_e45_regular', Arial, sans-serif;
+  font-size: 16px;
+    }
+ .question-button{
+    margin: 0 auto;
+ }
+
+@media screen and (min-width: 750px) {
+    .questions{
+        background-image: url(../images/FormTab.jpg);
+    }
+    .questions-header{
+        font-size: 56px;  
+    }
+    .questions-paragraf{
+        margin-bottom: 35px;
+    }
+    .question-wrapper{
+        margin: 15px auto;
+     }
+}
+
+@media screen and (min-width: 1170px) {
+    .questions{
+        background-image: url(../images/FormDesk.jpg);
+        min-height: 863px;
+    }
+    .questions-header{
+     
+        padding-top: 180px;
+       
+    }
+}
