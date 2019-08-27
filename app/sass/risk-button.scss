@@ -15,5 +15,19 @@
   text-transform: uppercase;
   font-weight: 800;
   padding-bottom:20px;
-
+  &:hover, &:focus{
+	background-image: url(../images/ButtonHover.png);
+  }
+  
+}
+@media screen and (min-width: 750px) {
+	.risk-button{
+		width:360px;
+		&:hover, &:focus{
+			background-image: url(../images/ButtonHoverDesk.png);
+		  }	
+		  &:active{
+			  padding-bottom: 18px;
+		  }
+	}
 }
