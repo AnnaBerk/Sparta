@@ -1,0 +1,13 @@
+@import "color-variables.scss";
+@import "mixins.scss";
+
+@keyframes move{
+	
+    50%{
+        box-shadow: 0 0 0 0.2em $main-color;
+    }
+    
+    
+   
+
+}

@@ -22,8 +22,9 @@
 }
 @media screen and (min-width: 750px) {
 	.risk-button{
-		width:360px;
+		
 		&:hover, &:focus{
+			width:360px;
 			background-image: url(../images/ButtonHoverDesk.png);
 		  }	
 		  &:active{

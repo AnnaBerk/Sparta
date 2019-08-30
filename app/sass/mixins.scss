@@ -32,7 +32,14 @@
     	border-width:5px;
     	border-style:solid;
     	border-color: rgba(255, 229, 229, 1);
-    	position: absolute;
-    	
-
+        position: absolute;
+    
+     
+}
+@mixin animation-move {
+    animation-name: move;
+    animation-duration: 1s; 
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
 }
