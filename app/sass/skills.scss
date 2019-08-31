@@ -5,6 +5,7 @@
 	background-repeat:no-repeat;
 	background-position: 0 100px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 .skills-header{
 
@@ -12,7 +13,7 @@
 	text-align: center;
     margin-bottom: 80px;
     margin-top:80px;
-
+	
 	  &:after{
 
      content:"Ты приобретешь";
@@ -73,7 +74,13 @@
 	margin-left: 40px;
 	margin-bottom: 50px;
 }
-
+@media screen and (min-width: 555px) {
+	.skills-header{
+		
+		height: 70px;
+		line-height: 70px;
+	}
+}
 @media screen and (min-width: 750px) {
 	.skills{
 	 background-image:url(../images/skillsLineTab.png),url(../images/skillsBgTab.jpg);
@@ -83,7 +90,8 @@
 .skills-header{
 	font-size: 48px;
 	margin-bottom: 70px;
-	
+	height: 70px;
+	line-height: 70px;
 		&:after{
 			font-size: 130px;
 

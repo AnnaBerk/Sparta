@@ -2,21 +2,22 @@
 @import "mixins.scss";
 
 .about{
-	margin-top:50px; 
+	
     box-sizing: border-box;
 	text-align: center;
 	color:$font-color;
-	
+	overflow: hidden;
 }
 
 .about-header{
   @include header-main-color;
     z-index: 1;
     white-space:nowrap;
-    margin-bottom:40px;
+	margin-bottom:40px;
+	margin-top:60px;
     height: 70px;
 	line-height: 70px;
-
+	
     
   &:after{
 
@@ -91,9 +92,7 @@
 
 }
 
-		.about{
-			margin-top:70px; 
-		}
+	
 
 
     .about-header{
@@ -167,10 +166,9 @@
 
 	@media screen and (min-width: 1170px) {
 
-		.about{
-			margin-top:100px; 
-		}
+	
 .about-header{
+	margin-top:80px;
     	font-size: 68px;
     	 	&:after{
     		font-size: 180px;

@@ -83,7 +83,7 @@
 }
 @media screen and (min-width: 750px) {
     .map-header{
-    
+        margin-top: 30px;
         margin-bottom: 10px;
         
         @include header-main-color;
@@ -152,8 +152,8 @@
 }
 
 @media screen and (min-width: 1170px) {
-    .map{
-        
+    .map-header{
+        margin-top: 50px;
     }
     .city-fifth{
         left: 23.75%;
