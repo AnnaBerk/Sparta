@@ -315,6 +315,7 @@
 </div>
 </div>
 </section>
+
 <section class="map">
 	<h2 class="map-header">георгафия проведения</h2>
 	<div class="map-wrapper">
@@ -361,7 +362,31 @@
 		<img class="footer-logo" src="images/logoFooter.png" alt="Логотип.Морда льва.">
 		<p class="footer-copyyear">&copy;2017</p>
 	</div>
-</picture>
+
 </footer>
+
+<div class=" popup">
+	<button class="popup-close">Закрыть</button>
+
+	<h2 class="popup-header">Попробуй выжить</h2>
+	<div class="popup-wrapper">
+	<p class="popup-paragraf ">Оставьте свой номер телефона, наши менеджеры свяжутся и проконсультируют Вас.</p>
+		<form class=" popup-form" method="post" action="#">
+      
+				<label class="visually-hidden" for="user-name">Имя</label>
+				<input id="user-name" class="popup-input" type="text" name="name" placeholder="Имя" maxlength=20 required autofocus><br>
+				
+				
+				<label class="visually-hidden" for="user-tel" >Телефон</label>
+				<input  id="user-tel" class="popup-input" type="tel" name="tel" placeholder="Телефон" pattern=""><br>
+				
+			</div>
+				<button class="risk-button popup-button" type="submit">Отправить</button> 
+				
+			</form> 
+		
+		</div>
+	<div class="popup-overlay"></div>
+
 <script src="js/common.js"></script>
 </body>

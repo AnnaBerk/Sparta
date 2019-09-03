@@ -21,6 +21,7 @@
      bottom: 0;
      left: 0;
      right: 0;
+     
 }
  @mixin dot{
 	    content:"";
@@ -42,4 +43,16 @@
     animation-iteration-count:infinite;
     animation-timing-function: ease-out;
     animation-direction: alternate;
+}
+@mixin input-style{
+    box-sizing: border-box;
+  display: block;
+  padding:20px 20px;
+  margin-bottom: 30px;
+  border-width: 0;
+  border-radius: 30px;
+  color: white;
+  background: rgba(255,255,255,.1);
+  font-family: 'core_sans_e45_regular', Arial, sans-serif;
+  font-size: 16px;
 }
