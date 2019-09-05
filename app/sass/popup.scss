@@ -75,6 +75,11 @@
 .popup-button{
     margin: 0 auto 40px auto;
 }
+.closed {
+ 
+    display: none;
+  
+  }
 @media screen and (min-width: 600px) {
     .popup-close{
         top:-25px;
