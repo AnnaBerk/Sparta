@@ -216,6 +216,7 @@
 </section>
 
 <section class="fotos">
+	<h2 class="visually-hidden">Fotos</h2>
 	<picture >
 		<source media="(max-width: 320px)" srcset="images/ProgrammFotoMob.jpg">
 		<source media="(max-width: 750px)" srcset="images/ProgrammFotoTab.jpg">
@@ -366,26 +367,26 @@
 </footer>
 
 <div class=" popup closed">
-	<button class="popup-close">Закрыть</button>
-
+	
 	<h2 class="popup-header">Попробуй выжить</h2>
 	<div class="popup-wrapper">
 	<p class="popup-paragraf ">Оставьте свой номер телефона, наши менеджеры свяжутся и проконсультируют Вас.</p>
-		<form class=" popup-form" method="post" action="#">
+		<form id="popup-form" class="popup-form" method="post" action="#">
       
 				<label class="visually-hidden" for="user-name">Имя</label>
-				<input id="user-name" class="popup-input" type="text" name="name" placeholder="Имя" maxlength=20 required autofocus><br>
+				<input id="popup-name" class="popup-input" type="text" name="name" placeholder="Имя" maxlength=20 required><br>
 				
 				
 				<label class="visually-hidden" for="user-tel" >Телефон</label>
-				<input  id="user-tel" class="popup-input" type="tel" name="tel" placeholder="Телефон" pattern=""><br>
-				
-			</div>
-				<button class="risk-button popup-button" type="submit">Отправить</button> 
-				
+				<input  id="popup-tel" class="popup-input" type="tel" name="tel" placeholder="Телефон" pattern="" required><br>
+				 
 			</form> 
-		
 		</div>
+			<button class="risk-button popup-button" form="popup-form" type="submit">Отправить</button>
+		
+			<button class="popup-close">Закрыть</button>
+		</div>
+		
 	<div class="popup-overlay closed"></div>
 
 <script src="js/common.js"></script>
