@@ -24,15 +24,18 @@
   var modal = document.querySelector(".popup");
   var modalOverlay = document.querySelector(".popup-overlay");
   var closeButton = document.querySelector(".popup-close");
-  var openButton = document.querySelector(".risk-button");
+  var openButton = document.querySelectorAll(".popupBtn");
 
   closeButton.addEventListener("click", function () {
     modal.classList.toggle("closed");
     modalOverlay.classList.toggle("closed");
   });
 
-  openButton.addEventListener("click", function () {
-    modal.classList.toggle("closed");
-    modalOverlay.classList.toggle("closed");
+  openButton.forEach(function (button) {
+    button.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal.classList.toggle("closed");
+      modalOverlay.classList.toggle("closed");
+    });
   });
 })();

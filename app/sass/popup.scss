@@ -44,7 +44,7 @@
 	height: 25px;
 	
     cursor: pointer;
-    &:hover, &focus{
+    &:hover, &:focus{
         background-image: url(../images/closeBtnHover.png);
     }
 }
