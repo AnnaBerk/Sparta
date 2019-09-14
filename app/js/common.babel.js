@@ -1,6 +1,22 @@
-"use strict";
+'use strict';
 
-(function () {
+//  video
+{
+  var playBtn = document.getElementById('playBtn');
+
+  var videoEl = document.getElementsByTagName('video')[0];
+  playBtn.addEventListener('click', function () {
+    if (videoEl.paused) {
+      videoEl.play();
+      playBtn.classList.add("visually-hidden");
+    } else {
+      videoEl.pause();
+    }
+  }, false);
+}
+
+// testimonial
+{
 
   var item = document.querySelector(".testimonials__item-text");
   var showBtn = document.querySelector(".testimonials__item-read");
@@ -11,31 +27,50 @@
     item.style.overflow = "visible";
     showBtn.style.display = "none";
     item.style.height = item.scrollHeight + "px";
-    var computedStyle = getComputedStyle(document.testimonial);
-    var testimonialBgHeight = computedStyle + parseInt(item.scrollHeight);
-    testimonial.style.height = testimonialBgHeight + "px";
+    item.style.marginBottom = "40" + "px";
+    //let computedStyle = getComputedStyle(testimonial);
+    //let testimonialBgHeight = +parseInt(testimonial.scrollHeight);
+    //testimonial.style.height = testimonialBgHeight +"px";
   });
-})();
+}
 
 // popup
 
-(function () {
+{
 
-  var modal = document.querySelector(".popup");
-  var modalOverlay = document.querySelector(".popup-overlay");
+  var popup = document.querySelector(".popup");
+  var popupOverlay = document.querySelector(".popup-overlay");
   var closeButton = document.querySelector(".popup-close");
   var openButton = document.querySelectorAll(".popupBtn");
+  var userName = document.getElementById("popup-name");
 
-  closeButton.addEventListener("click", function () {
-    modal.classList.toggle("closed");
-    modalOverlay.classList.toggle("closed");
-  });
+  var onPopupEsc = function onPopupEsc(evt) {
+    if (evt.keyCode === 27) {
+      closePopup();
+    }
+  };
 
+  var openPopup = function openPopup() {
+    popup.classList.remove('closed');
+    popupOverlay.classList.remove("closed");
+    document.addEventListener('keydown', onPopupEsc);
+  };
+
+  var closePopup = function closePopup() {
+    popup.classList.add('closed');
+    popupOverlay.classList.add("closed");
+    document.removeEventListener('keydown', onPopupEsc);
+  };
   openButton.forEach(function (button) {
-    button.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modal.classList.toggle("closed");
-      modalOverlay.classList.toggle("closed");
+    button.addEventListener("click", function () {
+      openPopup();
+      userName.focus();
     });
   });
-})();
+  closeButton.addEventListener("click", function () {
+    closePopup();
+  });
+  popupOverlay.addEventListener("click", function () {
+    closePopup();
+  });
+}

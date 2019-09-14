@@ -66,8 +66,9 @@
   .testimonials__item-wrapper{
     background-image: url(../images/VideoItemBgMob.jpg);
 background-repeat:no-repeat;
-min-height: 820px;
+min-height: 780px;
 background-size: 100% 100%; 
+padding-bottom: 70px;
 
 }
 .testimonials-foto{
@@ -185,10 +186,10 @@ margin-bottom: 30px;
     width: 750px;
     display: flex;
     align-items: flex-start;
-    min-height: 550px;
+    min-height: 570px;
     background-image: url(../images/VideoItemBgDesk.png);
 	background-repeat:no-repeat;
-    background-size:100% 550px; 
+    background-size:100% 100%; 
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;

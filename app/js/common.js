@@ -1,4 +1,20 @@
-
+//  video
+{
+		let playBtn = document.getElementById('playBtn');
+		
+		let videoEl = document.getElementsByTagName('video')[0];
+		playBtn.addEventListener('click', function () {
+    if (videoEl.paused) { 
+        videoEl.play();
+		playBtn.classList.add("visually-hidden");
+    } else {
+        videoEl.pause();
+		
+    }
+}, false);
+}
+   
+// testimonial
 {
 
 let item = document.querySelector(".testimonials__item-text");
@@ -9,9 +25,9 @@ let  testimonial= document.querySelector(".testimonials__item-wrapper");
 showBtn.addEventListener("click", function(evt){
   item.style.overflow = "visible"; 
   showBtn.style.display = "none"; 
+  let style = testimonial.style.height;
   item.style.height = item.scrollHeight+"px";
-  let computedStyle = getComputedStyle(document.testimonial);
-  let testimonialBgHeight = computedStyle+parseInt(item.scrollHeight);
+  let testimonialBgHeight = style +parseInt(testimonial.scrollHeight);
   testimonial.style.height = testimonialBgHeight +"px";
  });
 
