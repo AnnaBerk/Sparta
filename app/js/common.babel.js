@@ -26,11 +26,10 @@
   showBtn.addEventListener("click", function (evt) {
     item.style.overflow = "visible";
     showBtn.style.display = "none";
+    var style = testimonial.style.height;
     item.style.height = item.scrollHeight + "px";
-    item.style.marginBottom = "40" + "px";
-    //let computedStyle = getComputedStyle(testimonial);
-    //let testimonialBgHeight = +parseInt(testimonial.scrollHeight);
-    //testimonial.style.height = testimonialBgHeight +"px";
+    var testimonialBgHeight = style + parseInt(testimonial.scrollHeight);
+    testimonial.style.height = testimonialBgHeight + "px";
   });
 }
 

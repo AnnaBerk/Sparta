@@ -19,7 +19,9 @@
     z-index: 200;
     background-color:transparent ;
     
+ 
 }
+
 .popup-wrapper{
     max-width: 390px;
     width: 76%;
@@ -81,6 +83,26 @@
   
   }
 @media screen and (min-width: 600px) {
+    .popup{   animation-name:showpopup;
+    animation-duration: 1s;
+    }
+    @keyframes showpopup{
+        from {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            //animation-timing-function: ease-out;
+          }
+          75% {
+            top: 60%;
+            animation-timing-function: ease-in;
+          }
+        
+          to {
+            top: 50%;
+          }
+        
+    }
     .popup-close{
         top:-25px;
         right:-30px;
