@@ -19,10 +19,10 @@
 
 let item = document.querySelector(".testimonials__item-text");
 let  showBtn= document.querySelector(".testimonials__item-read");
-//let  testimonial= document.querySelector(".testimonials__item");
 let  testimonial= document.querySelector(".testimonials__item-wrapper");
 
 showBtn.addEventListener("click", function(evt){
+  
   item.style.overflow = "visible"; 
   showBtn.style.display = "none"; 
   let style = testimonial.style.height;

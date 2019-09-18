@@ -55,4 +55,15 @@
   background: rgba(255,255,255,.1);
   font-family: 'core_sans_e45_regular', Arial, sans-serif;
   font-size: 16px;
+  outline:none;
+
+    &:hover, &:focus{
+    background: rgba(255,255,255,.3);
+}
+}
+@mixin input-focus{
+    outline: none;
+    &:hover, &:focus{
+    background: rgba(255,255,255,.4);
+    }
 }
