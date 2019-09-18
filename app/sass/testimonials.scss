@@ -84,6 +84,12 @@ margin-bottom: 30px;
     padding: 0 15px;
     max-width: 400px;
     margin: 0 auto 15px auto;
+   
+}
+.animate{
+    transition-property: height;
+    transition-duration:2s;
+    transition-timing-function:ease-in;
 }
 .testimonials__item-read{
     font-family: 'core_sans_e45_regular', Arial, sans-serif;
@@ -92,6 +98,10 @@ margin-bottom: 30px;
     border-bottom: 2px dashed #000;
     font-size:16px;
     margin-bottom: 35px;
+    cursor: pointer;
+
+    animation-name:showtext;
+    animation-duration: 1s;
 }
 .testimonials__pagination{
 
