@@ -6,7 +6,7 @@
     CSS3.
     Flexbox.
     Доступность.
-    Javascript.
+    Javascript (ES6).
     Адаптивность.
     Sass.
     Gulp.
