@@ -1053,7 +1053,7 @@
 
 @media screen and (min-width: 750px) {
   .skills {
-    background-image: url(../images/skillsLineTab.png), url(../images/skillsBgTab.jpg);
+    background-image: url(../images/skillsLineTab.png), url(../images/SkillsBgTab.jpg);
     background-position: 110px 90px, 0 250px; }
   .skills-header {
     font-size: 48px;
@@ -1091,7 +1091,7 @@
 
 @media screen and (min-width: 1480px) {
   .skills {
-    background-image: url(../images/skillsLineDesk.png), url(../images/skillsBgDesk.jpg);
+    background-image: url(../images/skillsLineDesk.png), url(../images/SkillsBgDesk.jpg);
     background-position: 810px 130px, 0 70px; }
   .skills-header {
     font-size: 68px; }
