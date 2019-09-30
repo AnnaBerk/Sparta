@@ -7,6 +7,7 @@
     Flexbox.
     Доступность.
     Javascript (ES6).
+    БЭМ.
     Адаптивность.
     Sass.
     Gulp.
